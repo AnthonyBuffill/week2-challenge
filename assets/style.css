@@ -58,17 +58,30 @@ main {
   margin: 2% auto;
 }
 
+.img1 {
+  float: left;
+}
+
+.img2{
+  float: right;
+  margin-top: 16px;
+}
+
+
+
 article {
   display: inline-block;
+  margin-top: 15px;
   border-left-style: 4px solid #1b1d1e;
 }
 
 article p {
   float: right;
-  max-width: 75%;
+  text-align: justify;
+  max-width: 175%;
   background-color:  #1b1d1e;
   color: #979bdf;
-  margin padding-right: 30px;
+  margin padding-right: 10px;
   margin color: #1b1d1e;
   font-size: 200%;
 }
@@ -76,7 +89,6 @@ article p {
 article ul {
   margin-left: 5%;
   font-size: 110%;
-  list-style: circle;
 }
 
 section {
@@ -106,11 +118,23 @@ p :hover {
   justify-content: flex-start;
 }
 
+h3 {
+  font-size: 42px;
+  padding-right: 40px;
+  font-style: oblique;
+  text-decoration: underline;
+}
 
+.hoverable:hover + .display-on-hover{
+  display: block;
+}
 
+.display-on-hover {
+  display: none;
+}
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: 0%;
   padding:2%;
   background-color:#1e1e26;
@@ -118,13 +142,12 @@ footer {
   font-size: 24px;
 }
 
-
 @media screen and (max-width: 768px) {
   header {
     flex-direction: column;
   }
 
-  @media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
     main {
       flex-direction: column;
       align-items: center;
